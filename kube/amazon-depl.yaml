@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: amz-client-srv
+spec:
+  type: NodePort
+  selector:
+    app: amz-client
+  ports:
+    - name: amz-client
+      protocol: TCP
+      port: 3000
+      targetPort: 3000
