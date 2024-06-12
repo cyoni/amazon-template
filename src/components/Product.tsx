@@ -1,12 +1,24 @@
-import Image from "next/image";
-import React from "react";
-import { Button } from "./ui/button";
-import { IoStarSharp } from "react-icons/io5";
+"use client";
 
-function Product({ product }) {
-  const { title, price, description, category, image, rating } = product;
-  const { rate, count } = rating;
+import Image from "next/image"
+import React from "react"
+import { Button } from "./ui/button"
+import { IoStarSharp } from "react-icons/io5"
+import { useDispatch } from "react-redux"
+import { addToCartAction } from "@/actions/general.actions"
 
+interface IProps {
+  product: IProduct
+}
+function Product({ product }: IProps) {
+  const dispatch = useDispatch()
+
+  const { title, price, description, category, image, rating } = product
+  const { rate, count } = rating
+
+  const addToCart = () => {
+    dispatch(addToCartAction(product))
+  }
   return (
     <div className="relative p-10 flex flex-col m-5 bg-white shadow-md">
       <Image
@@ -28,11 +40,11 @@ function Product({ product }) {
 
       <p className="flex-1 mb-5">${price}</p>
 
-      <Button className="" variant={"default"}>
+      <Button onClick={addToCart} variant={"default"}>
         Add to Basket
       </Button>
     </div>
-  );
+  )
 }
 
-export default Product;
+export default Product
