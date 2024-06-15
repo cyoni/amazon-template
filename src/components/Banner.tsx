@@ -29,7 +29,6 @@ function Banner() {
         <CarouselNext className="right-4" />
       </Carousel>
 
-      {/* before:content-[''] before:h-32 before:w-full before:bg-gradient-to-t before:from-white before:to-transparent before:bottom-0 before:absolute before:z-[-1] */}
     </div>
   );
 }

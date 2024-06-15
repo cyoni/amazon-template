@@ -15,7 +15,7 @@ import { cartAmountSelector } from "@/selectors/general.selector"
 function Header() {
   const session = useSession()
   const isAuthenticated = session.status === "authenticated"
-  const user = isAuthenticated ? session.data.user : null
+  const user = isAuthenticated ? session.data?.user : null
 
   const cartAmount = useSelector(cartAmountSelector)
   return (
@@ -28,7 +28,6 @@ function Header() {
                 src={"/icons/logo.png"}
                 width={100}
                 height={100}
-                objectFit="contain"
                 alt="logo"
                 className="bg-clip-text bg-white text-white mt-2 h-[40px] w-[100px] "
               />
@@ -42,7 +41,7 @@ function Header() {
           <div className="flex items-center leading-4 text-xs text-white space-x-6 px-10 ">
             <div className="link text-nowrap">
               <p onClick={() => signInAction()}>
-                Hello {isAuthenticated ? user.name : "guest"},
+                Hello {isAuthenticated ? user?.name : "guest"},
               </p>
               <p className="font-extrabold md:text-sm ">
                 {isAuthenticated ? "Account & Lists" : "Sign in"}
