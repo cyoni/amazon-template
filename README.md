@@ -1,36 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This app was built using Next.js with Route handlers, Auth.js (Next Auth) for Google Sign-in, Redux, Redux-saga, Stripe for payments, Tailwind, Firebase for storing the users orders, Shadcn/UI
 
-## Getting Started
+## Home page
+<img src="https://github.com/cyoni/amazon-template/assets/44746539/dd735eb0-0a40-4aae-8a1d-d4c431d77d35" width=900 height=500>
 
-First, run the development server:
+## Checkout page
+<img src="https://github.com/cyoni/amazon-template/assets/44746539/185bfc3a-8c25-48c6-906b-3e2c9d835e69" width=900 height=500>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Payment page
+<img src="https://github.com/cyoni/amazon-template/assets/44746539/54e35c79-3aad-4d75-82a6-39188f4dc2d2" width=900 height=500>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Success page
+<img src="https://github.com/cyoni/amazon-template/assets/44746539/bca261d3-2ba6-4a7b-890e-c97cb5a5d536" width=900 height=500>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## My orders page
+<img src="https://github.com/cyoni/amazon-template/assets/44746539/8752c49e-b602-4987-8606-852d029adf3d" width=900 height=500>
