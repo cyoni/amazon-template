@@ -1,3 +1,5 @@
+## Amazon Clone
+
 This app was built using Next.js with Route handlers, Auth.js (Next Auth) for Google Sign-in, Redux, Redux-saga, Stripe for payments, Tailwind, Firebase for storing the users orders, Shadcn/UI
 
 ## Home page
